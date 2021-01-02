@@ -1,0 +1,131 @@
+/* Page settings */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    background-color: #e9f6fb;
+    font-family: 'Roboto', sans-serif;
+}
+
+@keyframes notice-me {
+    0% {font-size: 50px;}
+    50% {font-size: 65px;}
+    100% {font-size: 50px;}
+}
+
+.list-reset {
+    list-style: none;
+}
+/* fine page settings */
+
+/* Hamburger-menu */
+#ham-menu {
+    color: #259fcf;
+    font-size: 50px;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}    
+
+#ham-menu:hover {
+    color: #67c1e4;
+    transition: color 0.4s ease;
+}
+
+#ham-menu i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    animation-name: notice-me;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+/* fine hamburger-menu */
+
+/* Sidebar */
+#sidebar {
+    max-width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    padding: 30px 0;
+    transition: transform 0.4s ease;
+}
+
+.close-sidebar {
+    transform: translateX(-100%);
+    overflow: hidden;
+}
+
+.open-sidebar{
+    transform: translateX(0%);
+}
+
+#sidebar #exit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#sidebar h2 {
+    color: #259fcf;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+#sidebar a {
+    text-decoration: none;
+}
+
+#nav-menu {
+    padding: 30px 0;
+}
+
+#nav-menu li a {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.4s ease;
+}
+
+#nav-menu li a:hover {
+    color: #fff;
+    background-color: #67c1e4;
+}
+
+#links-menu {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#links-menu li {
+    padding: 10px;
+}
+
+#links-menu li a {
+    font-size: 25px;
+    color: #259fcf;
+    transition: color 0.4s ease;
+}
+
+#links-menu li a:hover {
+    color: #67c1e4;
+}
+/* fine sidebar */

@@ -1,0 +1,126 @@
+/* Page settings */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Roboto',sans-serif;
+}
+
+@keyframes title-fade {
+    0% {
+        left: -100%;
+        margin-left: 10%;
+        opacity: 0;
+    }
+    100% {
+        left: 0%;
+        margin-left: 10%;
+        opacity: 1;
+    }
+}
+
+.d-none {
+    display: none;
+}
+/* fine page settings */
+
+/* Titoli */
+#titles {
+    position: absolute;
+    top: 50%;
+    margin-left: 10%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    animation-name: title-fade;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+#titles h1,
+#titles h2 {
+    text-shadow: 3px 3px 3px #000;
+    color: #fff;
+}
+
+#titles h1 {
+    font-size: 70px;
+}
+
+#titles h2 {
+    font-size: 60px;
+    text-shadow: 3px 3px 3px #000;
+}
+
+#titles #modal-opener {
+    color: lightgrey;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+#titles #modal-opener:hover {
+    color: grey;
+}
+/* fine titoli */
+
+/* Modale */
+#modal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.7);
+}
+
+#modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+span#modal-exit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#modal h2 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#modal button {
+    padding: 10px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #a6a6a6;
+    color: #fff;
+    transition: background-color 0.4s ease;
+}
+
+#modal button:hover {
+    background-color: #cccccc;
+}
+
+button#modal-yes {
+    margin-right: 50px;
+}
+/* fine modale */

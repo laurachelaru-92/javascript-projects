@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel='preconnect' href='https://fonts.gstatic.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Modal</title>
+</head>
+<body>
+    <!-- Titoli -->
+    <div id="titles">
+        <h1>Hello</h1>
+        <h2>For your next adventure click <span id="modal-opener">Here</span></h2>
+    </div>
+    <!-- fine titoli -->
+    <!-- Modale -->
+    <div id="modal-wrapper" class="d-none">
+    </div>
+    <div id="modal" class="d-none">
+        <span id="modal-exit"><i class="fas fa-times"></i></span>
+        <h2>Are you ready to go on an adventure?</h2>
+        <button id="modal-yes">Yes!</button>
+        <button id="modal-no">No</button>
+    </div>
+    <!-- fine modale -->
+    <script src="script.js"></script>
+</body>
+</html>
